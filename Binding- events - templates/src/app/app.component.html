@@ -1,0 +1,20 @@
+<div style="text-align:center">
+  <h1>{{ title }}!</h1>
+</div>
+
+<div>
+  <b>Alege ziua:</b>
+  <select (change) = "selectieZi($event)">
+    <option *ngFor="let index of zileSaptamana">{{ index }}</option>
+  </select>
+</div>
+
+<div>
+  <span *ngIf="booleanVar; then conditie1; else conditie2"> </span>
+  <ng-template #conditie1>booleanVar is true</ng-template>
+  <ng-template #conditie2>booleanVar is false</ng-template>
+</div>
+
+<button (click)="clickAction($event)">
+  Buton Practica
+</button>
